@@ -1,7 +1,9 @@
 ﻿@model IEnumerable<GigHub.Models.Gig>
 @{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Mine";
 }
+
+<h2>My Upcoming Gigs</h2>
 
 <ul class="gigs">
     @foreach (var gig in Model)
@@ -17,7 +19,7 @@
             </div>
             <div class="details">
                 <span class="artist">
-                    @gig.Artist.Name
+                    @gig.Venue
                 </span>
                 <span class="genre">
                     @gig.Genre.Name
